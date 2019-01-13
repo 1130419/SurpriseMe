@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.surprise.me",
+      "nativeLanguage": "pt-pt"
+    },
+    "jhipsterVersion": "5.7.2",
+    "applicationType": "gateway",
+    "baseName": "SurpriseMe",
+    "packageName": "com.surprise.me",
+    "packageFolder": "com/surprise/me",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NTI5YTVmZjNmNjI4NWFjZDI4YmY5OWRlN2Q5M2I2OWE2ZDJkYmRjOGQwMzcyYTY1NjA0ZTVkYTM1MDhkZWFlMjU0OTRkOWQ3Nzk0ZmY2YjFhOTlmNGYxZDYzNTY4MWI3N2YzNjhhMGVkOTIzYTgyYjk3MTcyZmVkMDYxMTVkZDA=",
+    "clientFramework": "react",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "cucumber",
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "pt-pt",
+    "languages": [
+      "pt-pt",
+      "en"
+    ]
+  }
+}

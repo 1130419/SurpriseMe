@@ -1,0 +1,26 @@
+{
+    "name": "Menu",
+    "fields": [
+        {
+            "fieldName": "items",
+            "fieldType": "Item"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "items",
+            "otherEntityName": "item",
+            "otherEntityRelationshipName": "menu"
+        }
+    ],
+    "changelogDate": "20190113221408",
+    "entityTableName": "menu",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

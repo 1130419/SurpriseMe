@@ -1,0 +1,57 @@
+{
+    "name": "Restaurant",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "contact",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "typeOfMeal",
+            "fieldType": "TypeOfMeal",
+            "fieldValues": "MEDITERRANEA,PIZZA,PASTA"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "Address"
+        },
+        {
+            "fieldName": "classification",
+            "fieldType": "Classification"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "address",
+            "otherEntityName": "address",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "restaurant"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "classification",
+            "otherEntityName": "classification",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "restaurant"
+        }
+    ],
+    "changelogDate": "20190113221404",
+    "entityTableName": "restaurant",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

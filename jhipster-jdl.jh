@@ -1,0 +1,54 @@
+entity Restaurant {
+	name String
+    contact String
+    description String
+    typeOfMeal TypeOfMeal
+    address Address
+    classification Classification
+}
+
+entity Address {
+	street String
+    door String
+    county String
+    country String
+    postalCode String
+}
+
+entity Classification {
+	rating Integer
+    comment String
+}
+
+entity Item {
+	name String
+    description String
+	classification Classification
+}
+
+entity Menu {
+	items Item
+}
+
+enum TypeOfMeal {
+	MEDITERRANEA, PIZZA, PASTA
+}
+
+relationship OneToOne {
+	Restaurant{address} to Address
+}
+
+relationship OneToOne {
+	Restaurant{classification} to Classification
+}
+
+relationship OneToOne {
+	Item{classification} to Classification
+}
+
+relationship OneToMany {
+	Menu{items} to Item
+}
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
